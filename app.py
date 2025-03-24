@@ -13,7 +13,7 @@ PREDICTION_KEY = "c43480edd8d047ab8546b37fea8e89c9"
 # Gemini API settings
 GEMINI_API_KEY = "AIzaSyDWN-lXdhrNSD4arKrFA6d581eKKz0iK8c"
 genai.configure(api_key=GEMINI_API_KEY)
-gemini_model = genai.GenerativeModel("ggemini-2.0-flash")
+gemini_model = genai.GenerativeModel("gemini-2.0-flash")
 
 # Headers for Custom Vision
 HEADERS = {
