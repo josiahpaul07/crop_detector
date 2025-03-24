@@ -35,7 +35,7 @@ def get_disease_prediction(image_bytes):
 
 def get_cure_recommendation(disease_name):
     """Get treatment recommendations using Gemini LLM."""
-    prompt = f"The plant has been diagnosed with {disease_name}. Provide a recommended cure, including organic and chemical treatment options."
+    prompt = f"The plant has been diagnosed with {disease_name}. Provide a recommended cure, including organic and chemical treatment options. If the plant is healthy just return: health plant"
     response = gemini_model.generate_content(prompt)
     return response.text if response else "No recommendation available."
 
